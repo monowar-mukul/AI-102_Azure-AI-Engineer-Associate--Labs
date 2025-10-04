@@ -10,7 +10,7 @@ This repository contains the final copies of lab files for the **AI-102-A** cour
 |---|----------|-------------|--------------|
 | 1 | Choose and Deploy a Language Model | Explore the model catalog and learn how to select and deploy appropriate language models for your AI solutions. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/Instructions/02-Explore-model-catalog.md) |
 | 2 | Create a Generative AI Chat App | Build a generative AI chat application using Azure AI Foundry SDK and integrate it with language models. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/Instructions/02a-AI-foundry-sdk.md) |
-| 3 | Create a Generative AI App That Uses Your Own Data | Develop a generative AI application that leverages your custom data sources for enhanced, domain-specific responses. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/Instructions/02a-AI-foundry-sdk.md) |
+| 3 | Create a Generative AI App That Uses Your Own Data | Develop a generative AI application that leverages your custom data sources for enhanced, domain-specific responses. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/Instructions/04-Use-own-data.md) |
 
 ---
 
