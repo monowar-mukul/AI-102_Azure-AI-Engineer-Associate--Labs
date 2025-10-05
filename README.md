@@ -26,7 +26,12 @@ This repository contains the final copies of lab files for the **AI-102-A** cour
 | 4 | Fine-tune a language model | The model catalog in Azure AI Foundry offers many open-source models that can be fine-tuned for your specific model behavior needs. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/Instructions/05-Finetune-model.md) |
 | 5 | Plan a responsible generative AI solution | Apply content filters to prevent the output of harmful content. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/Instructions/06-Explore-content-filters.md) |
 | 6 | Evaluate generative AI model performance  | Manual and automated evaluations to assess the performance of a model. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/Instructions/07-Evaluate-prompt-flow.md) |
-| 7 | Develop AI Agents in Azure  | Explore AI Agent development. | [View Lab](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/01-agent-fundamentals.html) |
+| 7 | Develop AI Agents in Azure  | agent-fundamentals. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/01-agent-fundamentals.md) |
+| 8 | Develop AI Agents in Azure  | build-ai-agent. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/02-build-ai-agent.md) |
+| 9a | Develop AI Agents in Azure | 9a-agent-custom-functions. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03-agent-custom-functions.md) |
+| 9b | Develop AI Agents in Azure  | 9b-build-multi-agent-solution. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03b-build-multi-agent-solution.md) |
+| 9c | Develop AI Agents in Azure  | 9c-use-agent-tools-with-mcp.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03c-use-agent-tools-with-mcp.md) |
+| 9b | Develop AI Agents in Azure  | 9d-use-local-mcp-server-tools.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03d-use-local-mcp-server-tools.md) |
 
 ---
 
