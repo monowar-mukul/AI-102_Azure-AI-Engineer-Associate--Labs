@@ -1,5 +1,17 @@
 # AI-102-A: Designing and Implementing a Microsoft Azure AI Solution
 
+---
+
+### ⚠️ Disclaimer
+
+This repository contains the **final state of code from my testing lab setup**, prepared **for training and educational purposes**.
+While the code has been verified in a controlled lab environment, it may not be fully validated for production use.
+Please ensure you **thoroughly test** in a **lower (non-production) environment** before applying any changes to live systems.
+
+> **Always test, test, and test again** — validate all configurations and behaviours in your own controlled setup before production deployment.
+
+---
+
 ## 📚 Lab Collection
 
 This repository contains the final copies of lab files for the **AI-102-A** course: Designing and Implementing a Microsoft Azure AI Solution.
