@@ -1,43 +1,32 @@
 import os
 from dotenv import load_dotenv
+from typing import Any
 from pathlib import Path
+
+# Add references
 from azure.identity import DefaultAzureCredential
 from azure.ai.agents import AgentsClient
-from azure.ai.agents.models import (
-    FilePurpose,
-    CodeInterpreterTool,
-    ListSortOrder,
-    MessageRole
-)
+from azure.ai.agents.models import FilePurpose, CodeInterpreterTool, ListSortOrder, MessageRole
 
+def main(): 
 
-def main():
     # Clear the console
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    # Load environment variables
+    # Load environment variables from .env file
     load_dotenv()
     project_endpoint = os.getenv("PROJECT_ENDPOINT")
     model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
 
-    if not project_endpoint or not model_deployment:
-        print("Missing environment variables. Check your .env file.")
-        return
-
-    # Read data file
-    script_dir = Path(__file__).parent
+    # Display the data to be analyzed
+    script_dir = Path(__file__).parent  # Get the directory of the script
     file_path = script_dir / 'data.txt'
 
-    if not file_path.exists():
-        print(f"Data file not found at {file_path}")
-        return
-
     with file_path.open('r') as file:
-        data = file.read()
-        print("Data to be analyzed:\n")
+        data = file.read() + "\n"
         print(data)
 
-    # Initialize AgentsClient
+    # Connect to the Agent client
     agent_client = AgentsClient(
         endpoint=project_endpoint,
         credential=DefaultAzureCredential(
@@ -47,64 +36,59 @@ def main():
     )
 
     with agent_client:
-        # Upload file with correct purpose
+        # Upload the data file and create a CodeInterpreterTool
         file = agent_client.files.upload_and_poll(
-            file_path=file_path,
-            purpose=FilePurpose.CODE_INTERPRETER_TOOL  # ✅ Correct enum value
+            file_path=file_path, purpose=FilePurpose.AGENTS
         )
         print(f"Uploaded {file.filename}")
 
-        # Create CodeInterpreterTool
         code_interpreter = CodeInterpreterTool(file_ids=[file.id])
 
-        # Create agent
+        # Define an agent that uses the CodeInterpreterTool
         agent = agent_client.create_agent(
             model=model_deployment,
             name="data-agent",
-            instructions="You are an AI agent that analyzes the uploaded data file. Use Python to calculate statistical metrics as needed.",
+            instructions="You are an AI agent that analyzes the data in the file that has been uploaded. Use Python to calculate statistical metrics as necessary.",
             tools=code_interpreter.definitions,
             tool_resources=code_interpreter.resources,
         )
         print(f"Using agent: {agent.name}")
 
-        # Create thread
+        # Create a thread for the conversation
         thread = agent_client.threads.create()
-
-        # Interactive loop
+    
+        # Loop until the user types 'quit'
         while True:
-            user_prompt = input("Enter a prompt (or type 'quit' to exit): ").strip()
+            # Get input text
+            user_prompt = input("Enter a prompt (or type 'quit' to exit): ")
             if user_prompt.lower() == "quit":
                 break
-            if not user_prompt:
+            if len(user_prompt) == 0:
                 print("Please enter a prompt.")
                 continue
 
-            # Send message
-            agent_client.messages.create(
+            # Send a prompt to the agent
+            message = agent_client.messages.create(
                 thread_id=thread.id,
-                role=MessageRole.USER,
-                content=user_prompt
+                role="user",
+                content=user_prompt,
             )
 
-            # Run agent
-            run = agent_client.runs.create_and_process(
-                thread_id=thread.id,
-                agent_id=agent.id
-            )
+            run = agent_client.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)
 
+            # Check the run status for failures
             if run.status == "failed":
                 print(f"Run failed: {run.last_error}")
-                continue
-
-            # Get last agent message
+    
+            # Show the latest response from the agent
             last_msg = agent_client.messages.get_last_message_text_by_role(
                 thread_id=thread.id,
-                role=MessageRole.AGENT
+                role=MessageRole.AGENT,
             )
             if last_msg:
                 print(f"Last Message: {last_msg.text.value}")
 
-        # Show conversation history
+        # Get the conversation history
         print("\nConversation Log:\n")
         messages = agent_client.messages.list(thread_id=thread.id, order=ListSortOrder.ASCENDING)
         for message in messages:
@@ -115,6 +99,5 @@ def main():
         # Clean up
         agent_client.delete_agent(agent.id)
 
-
-if __name__ == '__main__':
+if __name__ == '__main__': 
     main()
