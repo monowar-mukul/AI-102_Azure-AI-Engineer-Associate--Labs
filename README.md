@@ -28,10 +28,10 @@ This repository contains the final copies of lab files for the **AI-102-A** cour
 | 6 | Evaluate generative AI model performance  | Manual and automated evaluations to assess the performance of a model. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/Instructions/07-Evaluate-prompt-flow.md) |
 | 7 | Explore AI Agent development | agent-fundamentals. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/01-agent-fundamentals.md) |
 | 8 | Develop an AI agent   | build-ai-agent. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/02-build-ai-agent.md) |
-| 9a | Develop AI Agents in Azure | 9a-agent-custom-functions. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03-agent-custom-functions.md) |
-| 9b | Develop a multi-agent solution with Azure AI Foundry  | 9b-build-multi-agent-solution. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03b-build-multi-agent-solution.md) |
-| 9c | Develop AI Agents in Azure  | 9c-use-agent-tools-with-mcp.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03c-use-agent-tools-with-mcp.md) |
-| 9b | Develop AI Agents in Azure  | 9d-use-local-mcp-server-tools.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03d-use-local-mcp-server-tools.md) |
+| 9 | Develop AI Agents in Azure | agent-custom-functions. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03-agent-custom-functions.md) |
+| 10 | Develop a multi-agent solution with Azure AI Foundry  | build-multi-agent-solution. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03b-build-multi-agent-solution.md) |
+| 11 | Connect AI Agents to a remote MCP server   | use-agent-tools-with-mcp.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03c-use-agent-tools-with-mcp.md) |
+| 12 | Develop AI Agents in Azure  | 9d-use-local-mcp-server-tools.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03d-use-local-mcp-server-tools.md) |
 
 ---
 
