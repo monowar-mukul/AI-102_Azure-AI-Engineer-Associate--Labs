@@ -31,7 +31,7 @@ This repository contains the final copies of lab files for the **AI-102-A** cour
 | 9 | Develop AI Agents in Azure | agent-custom-functions. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03-agent-custom-functions.md) |
 | 10 | Develop a multi-agent solution with Azure AI Foundry  | build-multi-agent-solution. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03b-build-multi-agent-solution.md) |
 | 11 | Connect AI Agents to a remote MCP server   | use-agent-tools-with-mcp.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03c-use-agent-tools-with-mcp.md) |
-| 12 | Develop AI Agents in Azure  | 9d-use-local-mcp-server-tools.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03d-use-local-mcp-server-tools.md) |
+| 12 | Connect AI Agents to a local MCP server  | use-local-mcp-server-tools.md. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-agents/blob/main/Instructions/03d-use-local-mcp-server-tools.md) |
 
 ---
 
