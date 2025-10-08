@@ -49,11 +49,11 @@ def main():
             # -----------------------------
             # Get key phrases
             # -----------------------------
-            key_phrases = ai_client.extract_key_phrases(documents=[text])[0].key_phrases
-            if key_phrases:
-                print("\nKey Phrases:")
-                for phrase in key_phrases:
-                    print('\t{}'.format(phrase))
+            #key_phrases = ai_client.extract_key_phrases(documents=[text])[0].key_phrases
+            #if key_phrases:
+             #   print("\nKey Phrases:")
+              #  for phrase in key_phrases:
+               #     print('\t{}'.format(phrase))
 
             # -----------------------------
             # Get entities
