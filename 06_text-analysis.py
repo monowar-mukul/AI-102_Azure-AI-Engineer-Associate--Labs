@@ -67,11 +67,11 @@ def main():
             # -----------------------------
             # Get linked entities
             # -----------------------------
-            #linked_entities = ai_client.recognize_linked_entities(documents=[text])[0].entities
-            #if linked_entities:
-              #  print("\nLinked Entities:")
-               # for linked_entity in linked_entities:
-                #    print('\t{} ({})'.format(linked_entity.name, linked_entity.url))
+            linked_entities = ai_client.recognize_linked_entities(documents=[text])[0].entities
+            if linked_entities:
+                print("\nLinked Entities:")
+                for linked_entity in linked_entities:
+                    print('\t{} ({})'.format(linked_entity.name, linked_entity.url))
 
     except Exception as ex:
         print("Error:", ex)
