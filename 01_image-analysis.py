@@ -60,7 +60,7 @@ def main():
 
         if result.dense_captions is not None:
             print("\nDense Captions:")
-            for caption in result.dense_captions:
+            for caption in result.dense_captions.list:
                 print(" Caption: '{}' (confidence: {:.2f}%)".format(caption.text, caption.confidence * 100))
 
         # Get image tags
