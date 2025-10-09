@@ -37,7 +37,8 @@ This repository contains the final copies of lab files for the **AI-102-A** cour
 | 15 | Custom text classification  | Several NLP capabilities, including the key phrase identification, text summarization, and sentiment analysis. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/04-text-classification.md) |
 | 16 | Develop an audio-enabled chat app  | To summarize voice messages left by customers. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/09-audio-chat.md) |
 | 17 | Analyze images   | Enables software systems to interpret visual input by analyzing images. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/Labs/01-analyze-images.md) |
-| 17 | Read text in images   | OCR -Reading text in images and documents. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/Labs/02-ocr.md) |
+| 18 | Read text in images   | OCR -Reading text in images and documents. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/Labs/02-ocr.md) |
+| 19 | Detect and analyze faces   |  AI Face Service Detect and analyze human faces. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/Labs/03-face-service.md) |
 
 
 ---
