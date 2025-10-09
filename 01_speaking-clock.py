@@ -4,7 +4,6 @@ from datetime import datetime
 import os
 
 # Import namespaces
-# Import namespaces
 from azure.core.credentials import AzureKeyCredential
 import azure.cognitiveservices.speech as speech_sdk
 
@@ -22,8 +21,6 @@ def main():
         speech_region = os.getenv('REGION')
 
         # Configure speech service
-        speech_config = speech_sdk.SpeechConfig(speech_key, speech_region)
-        print('Ready to use speech service in:', speech_config.region)        
 
         # Get spoken input
         command = TranscribeCommand()
@@ -37,24 +34,9 @@ def TranscribeCommand():
     command = ''
 
     # Configure speech recognition
-    current_dir = os.getcwd()
-    audioFile = current_dir + '/time.wav'
-    audio_config = speech_sdk.AudioConfig(filename=audioFile)
-    speech_recognizer = speech_sdk.SpeechRecognizer(speech_config, audio_config)
-
+   
     # Process speech input
-    print("Listening...")
-    speech = speech_recognizer.recognize_once_async().get()
-    if speech.reason == speech_sdk.ResultReason.RecognizedSpeech:
-        command = speech.text
-        print(command)
-    else:
-        print(speech.reason)
-        if speech.reason == speech_sdk.ResultReason.Canceled:
-            cancellation = speech.cancellation_details
-            print(cancellation.reason)
-            print(cancellation.error_details)
-
+   
     # Return the command
     return command
 
