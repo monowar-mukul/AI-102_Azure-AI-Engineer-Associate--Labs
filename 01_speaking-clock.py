@@ -21,6 +21,8 @@ def main():
         speech_region = os.getenv('REGION')
 
         # Configure speech service
+        speech_config = speech_sdk.SpeechConfig(speech_key, speech_region)
+        print('Ready to use speech service in:', speech_config.region)     
 
         # Get spoken input
         command = TranscribeCommand()
