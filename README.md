@@ -39,7 +39,7 @@ This repository contains the final copies of lab files for the **AI-102-A** cour
 | 17 | Analyze images   | Enables software systems to interpret visual input by analyzing images. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/Labs/01-analyze-images.md) |
 | 18 | Read text in images   | OCR -Reading text in images and documents. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/Labs/02-ocr.md) |
 | 19 | Detect and analyze faces   |  AI Face Service Detect and analyze human faces. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/Labs/03-face-service.md) |
-
+| 20 | Classify images   |  Train an image classification model that can identify classes. | [View Lab](https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/Labs/04-image-classification.md) |
 
 ---
 
