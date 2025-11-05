@@ -9,7 +9,7 @@ While the code has been verified in a controlled lab environment, it may not be 
 Please ensure you **thoroughly test** in a **lower (non-production) environment** before applying any changes to live systems.
 
 > **Always test, test, and test again** — validate all configurations and behaviours in your own controlled setup before production deployment.
-
+> **Note**: Azure Cloud Console is live - so ongoing update is happening. You may experience some location changes for the option selection.
 ---
 
 ## 📚 Lab Collection
